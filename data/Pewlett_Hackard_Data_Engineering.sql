@@ -40,3 +40,10 @@ CREATE TABLE dept_manager(
 );
 
 SELECT * FROM dept_manager
+
+CREATE TABLE salaries(
+    emp_no INT NOT NULL PRIMARY KEY,
+    FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
+    salary INT NOT NULL
+);
+SELECT * FROM salaries
